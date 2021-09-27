@@ -1,0 +1,29 @@
+{
+    "name": "jiannei\/laravel-options",
+    "description": "Global key-value store in the database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jiannei",
+            "email": "longjian.huang@foxmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jiannei\\LaravelOptions\\": "src"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.21"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiannei\\LaravelOptions\\Providers\\LaravelServiceProvider"
+            ],
+            "aliases": {
+                "Response": "Jiannei\\LaravelOptions\\Support\\Facades\\Option"
+            }
+        }
+    }
+}
